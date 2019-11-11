@@ -1,0 +1,68 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\\SimpleMvvmSamples.WPF\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="bin\**" />
+    <Compile Remove="obj\**" />
+    <EmbeddedResource Remove="bin\**" />
+    <EmbeddedResource Remove="obj\**" />
+    <None Remove="bin\**" />
+    <None Remove="obj\**" />
+    <Page Remove="bin\**" />
+    <Page Remove="obj\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="..\SimpleMvvmSamples.WPF\bin\Debug\Microsoft.Expression.Interactions.dll" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\bin\Debug\Microsoft.Expression.Interactions.xml" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\bin\Debug\Newtonsoft.Json.dll" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\bin\Debug\Newtonsoft.Json.xml" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\bin\Debug\SimpleInjector.dll" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\bin\Debug\SimpleInjector.xml" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\bin\Debug\SimpleMvvmSamples.WPF.exe" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\bin\Debug\SimpleMvvmSamples.WPF.exe.config" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\bin\Debug\SimpleMvvmSamples.WPF.pdb" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\bin\Debug\SimpleMvvmToolkit.Express.dll" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\bin\Debug\SimpleMvvmToolkit.Express.xml" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\bin\Debug\System.Windows.Interactivity.dll" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\bin\Debug\System.Windows.Interactivity.xml" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\obj\Debug\App.baml" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\obj\Debug\App.g.cs" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\obj\Debug\App.g.i.cs" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\obj\Debug\build.force" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\obj\Debug\GeneratedInternalTypeHelper.g.cs" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\obj\Debug\GeneratedInternalTypeHelper.g.i.cs" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\obj\Debug\MainWindow.baml" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\obj\Debug\MainWindow.g.cs" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\obj\Debug\MainWindow.g.i.cs" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\obj\Debug\SimpleMvvmSamples.WPF.csproj.CopyComplete" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\obj\Debug\SimpleMvvmSamples.WPF.csproj.FileListAbsolute.txt" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\obj\Debug\SimpleMvvmSamples.WPF.csproj.GenerateResource.cache" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\obj\Debug\SimpleMvvmSamples.WPF.csprojAssemblyReference.cache" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\obj\Debug\SimpleMvvmSamples.WPF.exe" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\obj\Debug\SimpleMvvmSamples.WPF.g.resources" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\obj\Debug\SimpleMvvmSamples.WPF.pdb" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\obj\Debug\SimpleMvvmSamples.WPF.Properties.Resources.resources" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\obj\Debug\SimpleMvvmSamples.WPF_MarkupCompile.cache" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\obj\Debug\SimpleMvvmSamples.WPF_MarkupCompile.i.cache" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\obj\Debug\SimpleMvvmSamples.WPF_MarkupCompile.i.lref" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\obj\Debug\SimpleMvvmSamples.WPF_MarkupCompile.lref" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\obj\Debug\Views\CustomerView.baml" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\obj\Debug\Views\CustomerView.g.cs" />
+    <Compile Remove="..\SimpleMvvmSamples.WPF\obj\Debug\Views\CustomerView.g.i.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+</Project>
